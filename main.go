@@ -70,7 +70,7 @@ func fetchLeetCode() []ContentInfo {
 
 func fetchMedium() []ContentInfo {
 	fp := gofeed.NewParser()
-	feed, err := fp.ParseURL("https://medium.com/feed/@jose-luis-navarro")
+	feed, err := fp.ParseURL("https://medium.com/feed/@dochenhao")
 	if err != nil {
 		panic(err)
 	}
