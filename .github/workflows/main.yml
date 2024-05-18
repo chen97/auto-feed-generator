@@ -31,8 +31,8 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email ${{ secrets.GIT_EMAIL }}
+        git config --local user.name "chen97"
         git add -A
         git commit -m "Update data files" || echo "No changes to commit"
         # Use the GitHub token to push changes
