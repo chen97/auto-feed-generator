@@ -38,8 +38,8 @@ jobs:
         # Use the GitHub token to push changes
         git push --set-upstream origin HEAD:${{ github.ref }} --force
       env:
-        GIT_AUTHOR_NAME: GitHub Action
-        GIT_COMMITTER_NAME: GitHub Action
-        GIT_AUTHOR_EMAIL: action@github.com
-        GIT_COMMITTER_EMAIL: action@github.com
+        GIT_AUTHOR_NAME: chen97
+        GIT_COMMITTER_NAME: chen97
+        GIT_AUTHOR_EMAIL: ${{ secrets.GIT_EMAIL }}
+        GIT_COMMITTER_EMAIL: ${{ secrets.GIT_EMAIL }}
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
